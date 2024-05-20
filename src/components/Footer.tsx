@@ -20,7 +20,7 @@ export const Footer = () => {
                         </div>
                     </Link>
                 </div>
-                <p className='text-sm text-black'>&copy; Proyecto Fisica I 2024 - Gustavo Gasaneo</p>
+                <p className='text-sm text-white'>&copy; Proyecto Fisica I 2024 - Gustavo Gasaneo</p>
             </div>
         </footer>
 

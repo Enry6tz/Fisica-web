@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-    <div className="flex flex-col justify-end items-center min-h-screen bg-app bg-center bg-no-repeat bg-cover text-white font-semibold">
+    <div className="flex flex-col justify-center items-stretch min-h-screen bg-app bg-center bg-no-repeat bg-cover text-white font-semibold">
 
       <div className="video-container">
         <video  autoPlay loop muted>
@@ -15,8 +15,8 @@ export default function Home() {
         
     </div>
     <main
-      className="flex flex-col lg:flex-row overflow-hidden w-full max-w-5xl m-4 lg:m-6">
-      <div className="flex-1 p-4 lg:p-6">
+      className="flex flex-col  flex-1 lg:flex-row overflow-hidden w-full max-w-5xl m-4 lg:m-6">
+      <div className=" p-4 lg:p-6">
         <div className="text-lg text-white font-semibold mb-8 flex items-center">
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd"
@@ -83,7 +83,9 @@ export default function Home() {
         </div>
       </div>
     </main>
+    <div className="pb-4 ">
     <Footer/>
+    </div>
   </div>
   </div>
   );

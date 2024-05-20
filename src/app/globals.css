@@ -3,14 +3,6 @@
 @tailwind utilities;
 
 
-body,
-html {
-  display: grid;
-  place-items: center;
-  margin: 0;
-  height: 100vh;
-  height: 100%;
-}
 
 header {
   background-color: #000;

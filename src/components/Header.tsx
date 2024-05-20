@@ -11,8 +11,8 @@ export const Header = () => {
                     {/*
                     <li><Link href="/" className='text-gray-500'>Simulacion</Link></li>
                     <li><Link href="/" className='text-gray-500'>Recursos y codigo fuente</Link></li>
-                    <li><Link href="/" className='text-gray-500'>Integrantes</Link></li>
-    */}
+                */}
+                    <li><Link href="/proyecto/integrantes" className='text-gray-500'>Integrantes</Link></li>
                 </ul>
             </nav>
         </header>

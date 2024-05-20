@@ -7,7 +7,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
   return (
     <>
       <Header />
-      <div className="bg-slate-300 p-2 ">
+      <div className="bg-slate-400 p-2  ">
         <div className="pt-6"></div>
         <main className="xl:mx-32 lg:mx-20 md:mx-10 sm:mx-5 mx-2.5 ">
           <div className="rounded-xl shadow-lg pb-6 mt-20 bg-white">

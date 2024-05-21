@@ -37,7 +37,7 @@ export default function Home() {
                 <div className="text-white font-semibold text-2xl  mb-2 mt-4">Informe</div>
                 <div className="text-white font-semibold ">Accede al informe completo de física con todos los detalles y análisis importantes haciendo clic aquí.</div>
               </Link>
-              <div
+              <Link href={"/proyecto/simulacion"}
                 className="rounded-2xl bg-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-5 p-4 flex flex-col relative undefined">
                 <div className="text-white font-semibold absolute right-2">
                   <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20"
@@ -50,7 +50,7 @@ export default function Home() {
                 <div className="text-white font-semibold text-2xl  mb-2 mt-4">Simulacion</div>
                 <div className="text-white font-semibold ">Writing the actual code for the site, as it controls everything
                   that happens behind the scenes of the site.</div>
-              </div>
+              </Link>
               <Link href={"/proyecto/integrantes"}
                 className="rounded-2xl bg-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-5 p-4 flex flex-col relative undefined">
                 <div className="text-white font-semibold absolute right-2">
@@ -63,7 +63,7 @@ export default function Home() {
                 <div className="text-white font-semibold text-2xl  mb-2 mt-4">Integrantes</div>
                 <div className="text-white font-semibold ">Alumnos participantes del proyectos y cuerpo docente. </div>
               </Link>
-              <div
+              <Link href={"/proyecto/recursos"}
                 className="rounded-2xl bg-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-5 p-4 flex flex-col relative undefined">
                 <div className="text-white font-semibold absolute right-2">
                   <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20"
@@ -76,7 +76,7 @@ export default function Home() {
                 <div className="text-white font-semibold text-2xl  mb-2 mt-4">Recursos y codigo fuente</div>
                 <div className="text-white font-semibold ">It is the design of the website interface and all its contents
                   before starting programming and development.</div>
-              </div>
+              </Link>
             </div>
           </div>
         </main>

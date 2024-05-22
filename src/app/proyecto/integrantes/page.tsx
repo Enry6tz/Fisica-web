@@ -33,13 +33,7 @@ export default function InformePage() {
       "description": "",
       "link": "intilebartel@gmail.com"
     },
-    {
-      "name": "Rosario Quezada Ohaco",
-      "career": "Ingeniería en Computación",
-      "path": "/img/facu.png",
-      "description": "",
-      "link": "@gmail.com" //TODO: completar
-    },
+   
     {
       "name": "Agustin Ramirez Ramos",
       "career": "Licenciatura en Computación",
@@ -124,12 +118,12 @@ export default function InformePage() {
   return (
       <div className="pb-10 mx-16">
         <div className="text-center text-BluePrimary pt-5">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold mt-4">Plantel Docente</h1>
-              <span className="text-lg sm:text-xl md:text-2xl xl:text-3xl font-light p-4"></span>
+
           </div>
           <div className="m-16">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-              {docentes.map((docen, index) => (
+              <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
+              { /*
+              docentes.map((docen, index) => (
                       <Card
                           key={index}
                           name={docen.name}
@@ -138,7 +132,8 @@ export default function InformePage() {
                           description={docen.description}
                           link={docen.link}
                       />
-                  ))} 
+                  ))*/
+                } 
               </div>
           </div>
           <div className="text-center text-BluePrimary pt-5">
@@ -146,7 +141,7 @@ export default function InformePage() {
               <span className="text-lg sm:text-xl md:text-2xl xl:text-3xl font-light p-4"></span>
           </div>
           <div className="m-16">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
                   {integrantes.map((integrante, index) => (
                       <Card
                           key={index}

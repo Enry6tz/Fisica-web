@@ -7,12 +7,14 @@ export default function InformePage() {
     <div className="p-10">
       
       <div className="text-sm sm:text-lg md:text-xl mt-5">
+      <div className="text-sm sm:text-lg md:text-xl mt-5 w-full flex  flex-col flex-nowrap items-center justify-center text-start">
             <h2 className="text-3xl font-bold mb-3">Elementos para interactuar con GeoGebra</h2>
-            <p className="font-semibold">se puede modificar la Vo, Altura y Angulo</p>
+            <p className="">Realizamos una simulación gráfica que describe la situación de tiro libre al aro en el cual dado los datos de entrada: velocidad inicial, ángulo, y altura, simula el tiro de basket, simula el tiro al aro y se grafican los vectores velocidad, aceleración y posición.
+</p>
             <span><Link href="https://www.geogebra.org/calculator/uj3nxmf4?embed" className="text-blue-500"> ver codigo fuente</Link></span>
        
 
-        <iframe
+        <iframe 
           src="https://www.geogebra.org/calculator/uj3nxmf4?embed"
           width={800}
           height={600}
@@ -23,6 +25,8 @@ export default function InformePage() {
             borderRadius: "4px"
           }}
         ></iframe>
+      </div>
+
       </div>
 
     </div>

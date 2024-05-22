@@ -1,5 +1,15 @@
-'use client'
+"use client"
+import { useEffect, useState } from 'react';
+
 export const TeoricoColab = () => {
+  const [htmlFilePath, setHtmlFilePath] = useState('');
+  
+  useEffect(() => {
+    const fullPath = '/teorico.html'; // Ruta relativa al archivo HTML dentro de la carpeta "components"
+    
+    setHtmlFilePath(fullPath);
+  }, []);
+
   return (
     <div className="colab-embed-container">
       <style jsx>{`
@@ -17,12 +27,13 @@ export const TeoricoColab = () => {
           border: none;
         }
       `}</style>
-      <iframe
-        title="TeoricoColab"
-        src="/Teorico.html" // La ruta a tu archivo HTML
-        
-        scrolling="yes"
+      {htmlFilePath && (
+        <iframe
+          title="TeoricoColab"
+          src={htmlFilePath}
+          scrolling="yes"
         ></iframe>
+      )}
     </div>
   );
 };

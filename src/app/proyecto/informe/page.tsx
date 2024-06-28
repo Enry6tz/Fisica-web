@@ -55,7 +55,7 @@ export default function InformePage() {
         </div>
       </div>
         <div className="h-full w-full py-1 bg-slate-400">
-          <TeoricoColab />
+          <TeoricoColab path="/teorico.html"/>
         </div>
         <div className="p-10">
       

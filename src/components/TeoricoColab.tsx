@@ -1,11 +1,16 @@
 "use client"
 import { useEffect, useState } from 'react';
 
-export const TeoricoColab = () => {
+
+interface Props {
+  path: string
+}
+
+export const TeoricoColab = ({path}:Props) => {
   const [htmlFilePath, setHtmlFilePath] = useState('');
   
   useEffect(() => {
-    const fullPath = '/teorico.html'; // Ruta relativa al archivo HTML dentro de la carpeta "components"
+    const fullPath = path; // Ruta relativa al archivo HTML dentro de la carpeta "components"
     
     setHtmlFilePath(fullPath);
   }, []);

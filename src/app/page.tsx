@@ -50,7 +50,7 @@ export default function Home() {
                 <div className="text-white font-semibold text-2xl  mb-2 mt-4">Simulacion</div>
                 <div className="text-white font-semibold ">Simulación en Geogebra del tiro libre en Basketball</div>
               </Link>
-              <Link href={"/proyecto/integrantes"}
+              <Link href={"/proyecto/integrantes#"}
                 className="rounded-2xl bg-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-5 p-4 flex flex-col relative undefined">
                 <div className="text-white font-semibold absolute right-2">
                   <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20"
@@ -62,7 +62,7 @@ export default function Home() {
                 <div className="text-white font-semibold text-2xl  mb-2 mt-4">Integrantes</div>
                 <div className="text-white font-semibold ">Alumnos participantes del proyectos y cuerpo docente. </div>
               </Link>
-              <Link href={"/proyecto/recursos"}
+              <Link href={"/proyecto/integrantes#anexo"}
                 className="rounded-2xl bg-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-5 p-4 flex flex-col relative undefined">
                 <div className="text-white font-semibold absolute right-2">
                   <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20"

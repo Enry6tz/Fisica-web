@@ -46,7 +46,7 @@ export function NavigationMenues() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Colab's</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Colabs</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="flex flex-col p-6 md:w-[200px] lg:w-[300px]">
 

@@ -70,7 +70,7 @@ else:
   };
 
   return (
-    <div className="bg-gray-800 text-white p-5 rounded-lg font-mono m-4">
+    <div className="bg-gray-800 text-white p-2 rounded-lg font-mono m-4">
       <h2 className="text-2xl mb-4">Código Hsv</h2>
       <pre className="bg-gray-900 p-4 rounded-md overflow-x-auto mb-4">
         <code>{code}</code>

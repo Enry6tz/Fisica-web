@@ -3,89 +3,147 @@ import Image from "next/image";
 import { Fa0 } from "react-icons/fa6";
 import Link from "next/link";
 import TeoricoColab from "@/components/TeoricoColab";
-
+import { LiaBasketballBallSolid } from "react-icons/lia";
 
 export default function InformePage() {
   return (
     <div className="pb-10">
-
       <div className="text-center text-BluePrimary pt-5">
         <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold mt-4">INFORME</h1>
-        <span className="text-sm sm:text-lg md:text-xl xl:text-2xl font-light p-4">Analisis de aspectos relacionados con el basetball mediante el uso de tecnicas de programacion y principios de física.</span>
+        <span className="text-sm sm:text-lg md:text-xl xl:text-2xl font-light p-4">
+          Análisis de aspectos relacionados con el básquet mediante el uso de técnicas de programación y principios de física.
+        </span>
       </div>
       <div className="flex lg:flex-row flex-nowrap flex-col-reverse items-center lg:items-start justify-center text-BluePrimary">
-
         <div className="text-BluePrimary flex-1 mx-5 my-10 flex items-center justify-center flex-col flex-nowrap">
           <div className="text-sm sm:text-lg md:text-xl">
-            <h2 className="text-3xl font-bold mb-3 ">MOTIVACIÓN</h2>
-            <p>Nuestro interés en analizar los tiros libres en baloncesto surge de la curiosidad por comprender la probabilidad de encestar y la <span className="font-semibold">física detrás de este proceso</span>. Entonces, la motivación principal que tuvo el grupo para realizar este proyecto fue implementar un software que permita mejorar y asistir a los jugadores casuales o profesionales de basket. Para lograr determinar la mejor estrategia para realizar tiros al aro, utilizamos técnicas de simulación, para poder trackear el balón y obtener resultados de su trayectoria. A través de este enfoque, buscamos entender mejor los factores que afectan la precisión de un tiro libre en baloncesto y desarrollar estrategias efectivas basadas en <span className="font-semibold">principios físicos.</span></p>
+            <h2 className="text-3xl font-bold mb-3">RESUMEN</h2>
+            <p>
+              Este informe presenta un análisis detallado del lanzamiento de baloncesto desde la línea de tiro libre, enfocándose en los principios de la cinemática, dinámica y energía. El objetivo del proyecto es, por un lado, aplicar fórmulas y principios físicos para predecir el comportamiento de la pelota, y por otro, utilizar videos para rastrear la trayectoria de la pelota y comparar los resultados teóricos con los datos experimentales. Se grabaron videos de lanzamientos y, mediante un programa en Python, se rastreó la posición de la pelota y se predijo el éxito del tiro. Los resultados obtenidos muestran cómo las leyes de la física pueden predecir con precisión la trayectoria de la pelota, y se identifican y analizan las discrepancias entre los resultados teóricos y prácticos. Este informe no solo proporciona una comprensión teórica detallada de los principios físicos involucrados en un lanzamiento de baloncesto (tiro oblicuo), sino que también demuestra su aplicación práctica, sirviendo como una guía comprensiva para la intersección entre física y deporte.
+            </p>
           </div>
 
           <div className="text-sm sm:text-lg md:text-xl mt-5">
             <h2 className="text-3xl font-bold mb-3">INTRODUCCIÓN</h2>
-            <p>Lo que estamos estudiando en el proyecto es la mejora en el tiro de basket, tomando en cuenta las <span className="font-semibold">ecuaciones de la cinemática</span>, y poniéndolas a prueba en dos partes:</p> <br />
-
             <p>
-              una parte teórica donde se van a usar ejemplos puntuales y estudiar con las anteriores fórmulas dichas, reemplazando. Antes de explicar los conceptos implementados en el software de cinemática y dinámica, primero es importante conocer en sí estos conceptos.
+              El baloncesto es un deporte en el que se combinan habilidades técnicas y principios físicos fundamentales. En este proyecto, nos hemos propuesto analizar los componentes físicos de un lanzamiento desde la línea de tiro libre, utilizando conceptos de cinemática, dinámica y energía. Este análisis no solo nos permite comprender mejor los factores que determinan el éxito de un tiro, sino también medir y predecir estos factores con precisión.
             </p>
             <br />
-
-
-            <p> <FaBaseballBall className="text-orange-700 inline mx-2" /> La <span className="font-semibold">cinemática</span> es el estudio de los movimientos que un objeto hace, sin importar las fuerzas involucradas. Por ejemplo, si estamos parados en una habitación, nosotros tenemos una <span className="font-semibold">posición</span>  actual (donde nos encontramos en el espacio), una <span className="font-semibold">velocidad</span> (qué tan rápido nos movemos de un lugar a otro de la habitación) y una <span className="font-semibold">aceleración</span> (cómo va variando nuestra velocidad, es decir, si estamos quietos y nos movemos, estaremos acelerando).</p> <br />
-            <p>  <FaBaseballBall className="text-orange-700 inline mx-2" />La < span className="font-semibold">dinámica</span>  es el estudio de por qué se mueven las cosas, involucrando fuerzas. Por ejemplo, si estamos en esa misma habitación de la que hablamos recién y empujamos a otra persona que se encuentra en la misma, involucramos una <span className="font-semibold">fuerza</span> (el empujón en sí), la cual dependerá de la masa de la persona (una persona con mayor peso necesitará un empujón más fuerte) y la <span className="font-semibold">inercia</span> de la misma (si la persona que vamos a empujar ya estaba caminando, la tendencia de esta persona es seguir en movimiento y por lo tanto cambiar su dirección va a requerir de un empuje más fuerte).</p>
+            <p>
+              <LiaBasketballBallSolid className="text-orange-700 inline mx-2" />
+              En la <span className="font-semibold">cinemática</span>, estudiamos el movimiento de la pelota sin tener en cuenta las fuerzas que lo causan, describiendo su trayectoria desde que abandona la mano del jugador hasta que llega al aro. Para esto, hemos utilizado ecuaciones de movimiento que nos permiten calcular variables críticas como la velocidad inicial, el ángulo de lanzamiento y el tiempo de vuelo.
+            </p>
+            <br />
+            <p>
+              <LiaBasketballBallSolid className="text-orange-700 inline mx-2" />
+              La <span className="font-semibold">dinámica</span> se enfoca en las fuerzas que actúan sobre la pelota durante su trayectoria. Aplicando la segunda ley de Newton, analizamos fuerzas como la gravedad, la resistencia del aire y la fuerza inicial ejercida por el jugador influyen en el movimiento de la pelota. Este análisis nos brinda una comprensión profunda de cómo las fuerzas modulan la trayectoria de la pelota y cómo las pequeñas variaciones en estas fuerzas pueden alterar significativamente el resultado del tiro.
+            </p>
+            <br />
+            <p>
+              <LiaBasketballBallSolid className="text-orange-700 inline mx-2" />
+              El análisis <span className="font-semibold">energético</span> nos permite examinar la conservación y transformación de la energía a lo largo del vuelo de la pelota. Calculando la energía cinética y potencial en diferentes puntos de la trayectoria, podemos visualizar las transiciones energéticas que ocurren y determinar los puntos de máxima y mínima energía, por otra parte, se calculó el coeficiente de restitución dejando una pelota caer desde el reposo, así obtener una mejor apreciación sobre la conservación de la energía.
+            </p>
+            <br />
+            <p>
+              Para validar nuestros análisis teóricos, hemos implementado un enfoque práctico que incluye la grabación de videos de lanzamientos y el uso de un programa en Python para rastrear la posición de la pelota en cada fotograma. Este programa, además de realizar el seguimiento, predice si el tiro será exitoso basándose en la trayectoria calculada. Los datos obtenidos se comparan con los resultados teóricos, permitiendo identificar y analizar las discrepancias.
+            </p>
+            <br />
+            <p>
+              Este informe está estructurado en tres secciones principales: cinemática, dinámica y análisis energético del tiro. Cada sección presenta los fundamentos teóricos y los resultados obtenidos a partir de cálculos y simulaciones. También se discuten los errores experimentales y se realiza una comparación detallada entre los resultados teóricos y prácticos, evaluando la efectividad de nuestras predicciones y comprendiendo mejor las limitaciones de nuestro enfoque.
+            </p>
           </div>
 
           <div className="text-sm sm:text-lg md:text-xl mt-5">
             <h2 className="text-3xl font-bold mb-3">MATERIALES Y MÉTODOS</h2>
-            <p className="font-semibold">Para la recolección de datos y análisis en este estudio sobre la precisión en los tiros al aro en baloncesto, se emplearon los siguientes materiales y métodos:</p>
+            <p>
+              Para este proyecto, se eligió trabajar con un sistema de coordenadas cartesianas (X e Y) para analizar la trayectoria de la pelota. Los materiales utilizados y las condiciones de medición son los siguientes:
+            </p>
             <ul className="m-2">
-              <li className="flex flex-row flex-nowrap m-1"> <p> <FaBaseballBall className="text-orange-700 inline mx-2" />  <span className="font-semibold">Cámara de Video:</span> Se utilizó una cámara para grabar distintas sesiones de tiros en una cancha de baloncesto. Esto permitió obtener registros visuales detallados de la trayectoria de la pelota y la técnica de tiro de los integrantes del grupo.</p></li>
-              <li className="flex flex-row flex-nowrap m-1"> <p> <FaBaseballBall className="text-orange-700 inline mx-2" />  <span className="font-semibold">Cinta Métrica:</span> Con el objetivo de medir con precisión las distancias desde las que se realizaron los tiros, se usó una cinta métrica. Esto aseguró que las posiciones fueran consistentes y exactas en cada intento.</p></li>
-              <li className="flex flex-row flex-nowrap m-1"> <p> <FaBaseballBall className="text-orange-700 inline mx-2" />  <span className="font-semibold">Balón de Baloncesto Profesional:</span> Se utilizó un balón de baloncesto profesional. Esto ayudó a garantizar que los resultados fueran aplicables en contextos de juego real.</p></li>
-              <li className="flex flex-row flex-nowrap m-1"> <p> <FaBaseballBall className="text-orange-700 inline mx-2" />  <span className="font-semibold">Tiros Repetidos:</span> Para mejorar la precisión de los cálculos y obtener datos más fiables, se realizaron múltiples tiros desde una posición fija. Esto permitió un análisis estadístico más robusto y una mejor comprensión de las variaciones en los tiros exitosos.</p></li>
+              <li className="flex flex-row flex-nowrap m-1">
+                <p>
+                  <LiaBasketballBallSolid className="text-orange-700 inline mx-2" /> Distancia del tirador al aro: 4,40 metros.
+                </p>
+              </li>
+              <li className="flex flex-row flex-nowrap m-1">
+                <p>
+                  <LiaBasketballBallSolid className="text-orange-700 inline mx-2" /> Altura del aro: 3 metros.
+                </p>
+              </li>
+              <li className="flex flex-row flex-nowrap m-1">
+                <p>
+                  <LiaBasketballBallSolid className="text-orange-700 inline mx-2" /> Altura de liberación de la pelota: 2,20 metros.
+                </p>
+              </li>
+              <li className="flex flex-row flex-nowrap m-1">
+                <p>
+                  <LiaBasketballBallSolid className="text-orange-700 inline mx-2" /> Ubicación de la cámara: entre el tirador y el aro, a una distancia de 7,5 metros.
+                </p>
+              </li>
+              <li className="flex flex-row flex-nowrap m-1">
+                <p>
+                  <LiaBasketballBallSolid className="text-orange-700 inline mx-2" /> Altura de la cámara: 1,5 metros.
+                </p>
+              </li>
+              <li className="flex flex-row flex-nowrap m-1">
+                <p>
+                  <LiaBasketballBallSolid className="text-orange-700 inline mx-2" /> Pelota de baloncesto: masa de 0,625 kg.
+                </p>
+              </li>
+              <li className="flex flex-row flex-nowrap m-1">
+                <p>
+                  <LiaBasketballBallSolid className="text-orange-700 inline mx-2" /> Programación: Lenguaje Python para procesamiento de video y análisis de datos.
+                </p>
+              </li>
             </ul>
-            <p> Estos  <span className="font-semibold">materiales y métodos</span> se combinaron para crear un estudio detallado y preciso sobre la realización de tiros al aro en baloncesto, proporcionando datos valiosos para el análisis de la técnica y la precisión en el deporte.</p>
+            <br />
+            <p>El procedimiento seguido fue el siguiente:</p>
+            <ol className="m-2 list-decimal list-inside">
+              <li className="m-1">
+                <p className="font-semibold">Grabación de Videos:</p>
+                <ul className="list-disc list-inside ml-5">
+                  <li className="m-1">Se realizaron múltiples tiros al aro desde la línea de tiro libre, asegurando que las condiciones de lanzamiento fueran consistentes.</li>
+                  <li className="m-1">Los videos fueron grabados con una cámara ubicada a 7,5 metros de distancia del tirador y a una altura de 1,5 metros.</li>
+                </ul>
+              </li>
+              <li className="m-1">
+                <p className="font-semibold">Selección de Videos:</p>
+                <ul className="list-disc list-inside ml-5">
+                  <li className="m-1">Los videos grabados fueron revisados y se seleccionaron aquellos que mostraban claramente la trayectoria completa de la pelota.</li>
+                  <li className="m-1">Los videos seleccionados fueron recortados para enfocarse únicamente en el momento del lanzamiento y la trayectoria de la pelota hasta el aro.</li>
+                </ul>
+              </li>
+              <li className="m-1">
+                <p className="font-semibold">Edición de Videos:</p>
+                <ul className="list-disc list-inside ml-5">
+                  <li className="m-1">Los videos seleccionados fueron editados para saturar los colores, facilitando la identificación del color naranja de la pelota.</li>
+                </ul>
+              </li>
+              <li className="m-1">
+                <p className="font-semibold">Procesamiento de Video con Python:</p>
+                <ul className="list-disc list-inside ml-5">
+                  <li className="m-1">Se desarrolló un programa en Python para rastrear la posición de la pelota en cada cuadro del video.</li>
+                  <li className="m-1">El programa utiliza técnicas de procesamiento de imágenes para identificar la pelota en cada fotograma y extraer sus coordenadas (X e Y).</li>
+                  <li className="m-1">Los datos de posición de la pelota se exportaron a un archivo CSV para su posterior análisis.</li>
+                </ul>
+              </li>
+              <li className="m-1">
+                <p className="font-semibold">Análisis Teórico y Práctico:</p>
+                <ul className="list-disc list-inside ml-5">
+                  <li className="m-1">Se aplicaron ecuaciones de cinemática, dinámica y energía para predecir la trayectoria de la pelota, calculando variables como velocidad inicial, ángulo de lanzamiento y energía.</li>
+                  <li className="m-1">Los datos experimentales obtenidos del rastreo de la pelota se compararon con los resultados teóricos.</li>
+                </ul>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
-      <div className="text-BluePrimary flex-1 my-10 flex items-center justify-center flex-col flex-nowrap">
-        <div className="text-sm sm:text-lg md:text-xl flex flex-col items-center justify-center">
-          <h2 className="text-3xl font-bold mb-3">Analisis con Colaboratory </h2>
-          <Link href="https://colab.research.google.com/drive/1WBHdcBLYBEVhQ494ADrgbU3bS3tHsyoJ#scrollTo=Tj3I1SU1yca-" className="text-blue-600 text-lg font-normal" >ver codigo fuente</Link>
-        </div>
-      </div>
-        <div className="h-full w-full py-1 bg-slate-400">
-          <TeoricoColab path="/teorico.html"/>
-        </div>
-        <div className="p-10">
-      
-      <div className="text-sm sm:text-lg md:text-xl mt-5 w-full flex  flex-col flex-nowrap items-center justify-center text-start ">
-            <h2 className="text-3xl font-bold mb-3">Elementos para interactuar con GeoGebra</h2>
-            <p className="">Realizamos una simulación gráfica que describe la situación de tiro libre al aro en el cual dado los datos de entrada: velocidad inicial, ángulo, y altura, simula el tiro de basket, simula el tiro al aro y se grafican los vectores velocidad, aceleración y posición.
-</p>
-            <span><Link href="https://www.geogebra.org/calculator/uj3nxmf4?embed" className="text-blue-500"> ver codigo fuente</Link></span>
-       
 
-        <iframe
-          src="https://www.geogebra.org/calculator/uj3nxmf4?embed"
-          width={800}
-          height={600}
-          
-          frameBorder={0}
-          style={{
-            border: "1px solid #e4e4e4",
-            borderRadius: "4px"
-          }}
-        ></iframe>
-      </div>
-
-    </div>
       <div>
         <div className="text-BluePrimary flex-1 mx-5 my-10 flex items-center justify-center flex-col flex-nowrap">
           <div className="text-sm sm:text-lg md:text-xl">
             <h2 className="text-3xl font-bold mb-3">CONCLUSIÓN</h2>
             <p>
-              En nuestro proyecto, desarrollamos un software capaz de analizar el tiro libre de basket. Esto lo logramos a través de la captura y análisis de videos, hemos implementado un sistema de trackeo en Python que nos ha permitido examinar los aspectos cinemáticos del movimiento de la pelota y la situación de tiro libre al aro.
+              En nuestro proyecto, desarrollamos un software capaz de analizar el tiro libre de baloncesto. Esto lo logramos a través de la captura y análisis de videos, hemos implementado un sistema de trackeo en Python que nos ha permitido examinar los aspectos cinemáticos del movimiento de la pelota y la situación de tiro libre al aro.
             </p>
             <p>
               Hasta el momento, nuestros análisis se centraron en la cinemática, logrando descomponer y entender la trayectoria de la pelota, su velocidad, aceleración y las distintas fases del tiro libre.
@@ -99,9 +157,7 @@ export default function InformePage() {
               La energía cinética (Ek​) del balón se calculará usando la fórmula:
             </p>
             <pre className="bg-gray-100 p-2 rounded">Ek ​= ½.𝑚.𝑣<sup>2</sup></pre>
-            <p>
-              donde 𝑚 es la masa de la pelota y v es su velocidad.
-            </p>
+            <p>donde 𝑚 es la masa de la pelota y v es su velocidad.</p>
             <p>
               La energía potencial gravitatoria (Ep​) se determinará con:
             </p>
@@ -138,11 +194,8 @@ export default function InformePage() {
               Este componente es crucial para obtener una comprensión completa y detallada de la física detrás del tiro libre en el baloncesto.
             </p>
             <p>
-              En resumen, los avances realizados hasta ahora destacan la efectividad de nuestro enfoque para el análisis cinemático y nos preparan para la siguiente fase del proyecto, en la cual integraremos el análisis dinámico para lograr una evaluación más exhaustiva del tiro libre de basket.
+              En resumen, los avances realizados hasta ahora destacan la efectividad de nuestro enfoque para el análisis cinemático y nos preparan para la siguiente fase del proyecto, en la cual integraremos el análisis dinámico para lograr una evaluación más exhaustiva del tiro libre de baloncesto.
             </p>
-            <div className="pt-10 text-center">
-            <Link href={"/proyecto/recursos"} className="text-blue-400 ">Ver Anexo</Link>
-            </div>
           </div>
         </div>
       </div>

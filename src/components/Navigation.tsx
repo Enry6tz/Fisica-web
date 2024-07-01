@@ -17,25 +17,25 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Hsv valores",
-    href: "/code/#hsv",
+    href: "/proyecto/code/hsv",
     description:
       "Codigo que se uso para encontrar la pelota u objeto dentro del video seleccionado",
   },
   {
     title: "Prediccion",
-    href: "/code/#prediction",
+    href: "/proyecto/code/prediction",
     description:
       "Predice a partir de los frames iniciales si una pelota es encestada",
   },
   {
     title: "Trayectoria y energia",
-    href: "/code/#energy",
+    href: "/proyecto/code/energy",
     description:
       "Codigo usado para seguir la trayectoria de una pelota y graficar su energia",
   },
   {
     title: "Trayectoria rebote de pelota",
-    href: "/code/#restitucion",
+    href: "/proyecto/code/restitucion",
     description:
       "Codigo usado para seguir la trayectoria de una pelota de golf picando partiendo del reposo",
   },
@@ -50,17 +50,18 @@ export function NavigationMenues() {
           <NavigationMenuContent>
             <ul className="flex flex-col p-6 md:w-[200px] lg:w-[300px]">
 
-              <ListItem href="/docs/cinematica" title="Cinematica">
+              <ListItem href="/proyecto/docs/cinematica" title="Cinematica">
                 
               </ListItem>
-              <ListItem href="/docs/dinamica " title="Dinamica">
+              <ListItem href="/proyecto/docs/dinamica " title="Dinamica">
            
               </ListItem>
-              <ListItem href="/docs/energia" title="Energia">
+              <ListItem href="/proyecto/docs/energia" title="Energia">
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+
         <NavigationMenuItem>
           <NavigationMenuTrigger>Código fuente</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -77,13 +78,15 @@ export function NavigationMenues() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+
         <NavigationMenuItem>
-          <Link href="/codigo" legacyBehavior passHref>
+          <Link href="/proyecto/integrantes" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Anexo
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
+
       </NavigationMenuList>
     </NavigationMenu>
   )

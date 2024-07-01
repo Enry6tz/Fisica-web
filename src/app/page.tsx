@@ -35,7 +35,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="text-white font-semibold text-2xl  mb-2 mt-4">Informe</div>
-                <div className="text-white font-semibold ">Accede al informe completo de física con todos los detalles y análisis importantes haciendo clic aquí.</div>
+                <div className="text-white font-semibold ">Accede al informe completo de física con todos los detalles y análisis importantes.</div>
               </Link>
               <Link href={"/proyecto/simulacion"}
                 className="rounded-2xl bg-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-5 p-4 flex flex-col relative undefined">
@@ -48,7 +48,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="text-white font-semibold text-2xl  mb-2 mt-4">Simulacion</div>
-                <div className="text-white font-semibold ">Simulación en Geogebra del tiro libre en Basketball</div>
+                <div className="text-white font-semibold ">Simulación en Geogebra del tiro libre en Básquet.</div>
               </Link>
               <Link href={"/proyecto/integrantes#"}
                 className="rounded-2xl bg-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-5 p-4 flex flex-col relative undefined">
@@ -60,7 +60,7 @@ export default function Home() {
                       clip-rule="evenodd"></path>
                   </svg> </div>
                 <div className="text-white font-semibold text-2xl  mb-2 mt-4">Integrantes</div>
-                <div className="text-white font-semibold ">Alumnos participantes del proyectos y cuerpo docente. </div>
+                <div className="text-white font-semibold ">Participantes del proyectos y cuerpo docente. </div>
               </Link>
               <Link href={"/proyecto/integrantes#anexo"}
                 className="rounded-2xl bg-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-5 p-4 flex flex-col relative undefined">

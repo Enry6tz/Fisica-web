@@ -184,14 +184,6 @@ export default function InformePage() {
              </div>
            </div>
          </div>
-         <div>
-           <div className="m-16 border-gray-400 shadow-sm bg-gray-600 rounded-lg p-4">
-            <pre >asdasads</pre>
-            <button onClick={() => handleCopyContact("codigo")} className="bg-indigo-600 p-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide flex flex-row items-center justify-center ">
-          <span className='mx-1'>copiar Contacto</span>
-        </button>
-           </div>
-         </div>
        
        </div>
        </div>
